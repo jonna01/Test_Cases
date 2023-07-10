@@ -13,9 +13,8 @@ jobs:
           python-version: 3.9
       - uses: browser-actions/setup-chrome@v1
       - uses: nanasess/setup-chromedriver@v2
-      
-      - run: chrome --version
+
       - run: pip install pytest   
       - run: pip install matplotlib 
       - run: pip install selenium 
-      - run: pytest tests/tests4.py
+      - run: pytest -v tests/tests4.py
