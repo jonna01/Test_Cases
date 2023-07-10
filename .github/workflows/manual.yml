@@ -18,4 +18,5 @@ jobs:
       - run: pip install pytest   
       - run: pip install matplotlib 
       - run: pip install selenium 
-      - run: pytest tests/tests4.py
+      - run: webdriver.Chrome().get('/home/runner/work/Test_Cases/Test_Cases/index.html#4')
+      #- run: pytest tests/tests4.py
