@@ -27,4 +27,7 @@ jobs:
         run: pip install pytest selenium matplotlib
       
       - name: Running Python Tests with pytest
-        run: pytest -v tests/final_tests.py
+        run: coverage run -m pytest -v tests/final_tests.py
+        
+      - name: Coverage Running Python Tests with pytest
+        run: coverage report -m	
